@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-center class="header-state">
+      Programação
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-row>
+    <ion-col col-10>
+      <div class="about-subtitle-programming">
+        A melhor programação para você
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col col-12 text-center>
+      <ion-slides pager>
+        <ion-slide *ngFor="let pro of program" class="slide-image">
+          <img [src]="pro.card"/>
+        </ion-slide>
+      </ion-slides>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

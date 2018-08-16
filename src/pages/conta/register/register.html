@@ -1,0 +1,39 @@
+
+<ion-content class="login">
+  <ion-grid>
+    <ion-row justify-content-center>
+      <ion-col col-sm-auto col-md-5>
+        <ion-card color="transparent">
+          <ion-card-header>
+            <div class="img-login">
+              <img src="assets/img/marcaplus_slogan_login.png"/>
+            </div>
+          </ion-card-header>
+          <ion-card-content>
+            <form (submit)="register()">
+              <ion-item>
+                <ion-input type="text" name="nome" placeholder="Nome"
+                           [(ngModel)]="user.name"></ion-input>
+              </ion-item>
+              <ion-item class="password">
+                <ion-input type="text" name="email" placeholder="E-mail"
+                           [(ngModel)]="user.email"></ion-input>
+              </ion-item>
+              <ion-item class="password">
+                <ion-input type="password" name="password" placeholder="Senha"
+                           [(ngModel)]="user.password"></ion-input>
+              </ion-item>
+              <ion-item class="password">
+                <ion-input type="password" name="password" placeholder="Confirmar Senha"
+                           [(ngModel)]="user.password_confirmation"></ion-input>
+              </ion-item>
+              <button ion-button type="submit" color="face" block class="button">Criar Conta</button>
+            </form>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+

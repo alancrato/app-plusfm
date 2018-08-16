@@ -1,0 +1,87 @@
+<ion-header>
+	<div class="frase">Sete dias da semana sem medo da notícia!</div>
+	<ion-navbar color="cn7">
+		<ion-row>
+			<ion-col col-sm-2>
+				<button ion-button menuToggle class="button-home">
+					<ion-icon name="menu"></ion-icon>
+				</button>
+			</ion-col>
+			<ion-col col-sm-8>
+				<ion-title text-center>
+					<img src="http://cearanews7.com/wp-content/themes/cn7/assets/img/logocearanews.png" class="img-home">
+				</ion-title>
+			</ion-col>
+			<ion-col col-sm-2>
+				<!--<div class="icon-search-home">
+                  <ion-icon ios="ios-search" md="md-search"></ion-icon>
+                </div>-->
+			</ion-col>
+		</ion-row>
+	</ion-navbar>
+</ion-header>
+
+<ion-content>
+	<div *ngFor="let category of categories" (click)="loadCategory(category)">
+		<div *ngIf="category.id == 40; then ifcondition"></div>
+		<ng-template #ifcondition>
+			<ion-list>
+				<ion-item>
+					<ion-icon name="pricetags" item-left></ion-icon>
+					{{category.name}}
+				</ion-item>
+				<div class="line"></div>
+			</ion-list>
+		</ng-template>
+		<div *ngIf="category.id == 19; then ifcondition"></div>
+		<ng-template #ifcondition>
+			<ion-list>
+				<ion-item>
+					<ion-icon name="pricetags" item-left></ion-icon>
+					{{category.name}}
+				</ion-item>
+				<div class="line"></div>
+			</ion-list>
+		</ng-template>
+		<div *ngIf="category.id == 31; then ifcondition"></div>
+		<ng-template #ifcondition>
+			<ion-list>
+				<ion-item>
+					<ion-icon name="pricetags" item-left></ion-icon>
+					{{category.name}}
+				</ion-item>
+				<div class="line"></div>
+			</ion-list>
+		</ng-template>
+		<div *ngIf="category.id == 36; then ifcondition"></div>
+		<ng-template #ifcondition>
+			<ion-list>
+				<ion-item>
+					<ion-icon name="pricetags" item-left></ion-icon>
+					{{category.name}}
+				</ion-item>
+				<div class="line"></div>
+			</ion-list>
+		</ng-template>
+		<div *ngIf="category.id == 18; then ifcondition"></div>
+		<ng-template #ifcondition>
+			<ion-list>
+				<ion-item>
+					<ion-icon name="pricetags" item-left></ion-icon>
+					{{category.name}}
+				</ion-item>
+				<div class="line"></div>
+			</ion-list>
+		</ng-template>
+		<div *ngIf="category.id == 1; then ifcondition"></div>
+		<ng-template #ifcondition>
+			<ion-list>
+				<ion-item>
+					<ion-icon name="pricetags" item-left></ion-icon>
+					{{category.name}}
+				</ion-item>
+				<div class="line"></div>
+			</ion-list>
+		</ng-template>
+	</div>
+</ion-content>

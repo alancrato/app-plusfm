@@ -1,0 +1,34 @@
+<ion-menu [content]="content">
+
+  <ion-header class="logo-app">
+    <img src="assets/img/logo.png"/>
+        <div class="user">Aqui é legal demais!</div>
+    <br/>
+  </ion-header>
+
+  <ion-content class="content-app-ios">
+    <ion-list class="list-app">
+      <div *ngIf="!(user !== null); then thenBlock else elseBlock"></div>
+      <ng-template #thenBlock>
+        <button ion-item *ngFor="let p of pages" (click)="openPage(p)" color="dark">
+          <ion-icon [name]="p.icon" item-left></ion-icon>
+          {{p.title}}
+        </button>
+      </ng-template>
+      <ng-template #elseBlock>
+        <button ion-item *ngFor="let p of pagesUser" (click)="openPage(p)" color="dark">
+          <ion-icon [name]="p.icon" item-left></ion-icon>
+          {{p.title}}
+        </button>
+        <br>
+        <hr>
+        <button ion-item color="dark" (click)="logout()">
+          <ion-icon name="log-out" item-left></ion-icon> Sair
+        </button>
+      </ng-template>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

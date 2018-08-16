@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar color="face">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header text-center>
+      {{users?.name}}<br>
+      <div class="font-email">
+        {{users?.email}}<br>
+      </div>
+    </ion-list-header>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <h3 text-center class="text-update">
+        Atualizar Senha
+      </h3>
+      <form (submit)="submit()">
+        <ion-item>
+          <ion-input type="password" name="password" placeholder="Senha"
+                     [(ngModel)]="user.password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="password" name="password_confirmation" placeholder="Confirme nova senha"
+                     [(ngModel)]="user.password_confirmation"></ion-input>
+        </ion-item>
+        <ion-item>
+          <button ion-button type="submit" block color="face" class="button">Atualizar</button>
+        </ion-item>
+      </form>
+    </ion-item>
+    <div class="line"></div>
+    <ion-item>
+      <notifications></notifications>
+    </ion-item>
+  </ion-list>
+</ion-content>

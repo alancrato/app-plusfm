@@ -1,0 +1,26 @@
+
+@font-face {
+    font-family: "SF-Pro-Text-Regular";
+    src: url('fonts/SF-Pro-Text-Regular.OTF');
+}
+
+@font-face {
+    font-family: "Fadada Regular";
+    src: url('fonts/FABADA REGULAR.TTF');
+}
+
+ion-content{
+    font-family: SF-Pro-Text-Regular;
+}
+
+.login{
+    background-image: url("img/bg_login.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.user{
+    font-family: "Fadada Regular";
+    font-size: 1em;
+    font-weight: 300;
+}

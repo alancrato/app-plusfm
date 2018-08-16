@@ -1,0 +1,63 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-row text-center>
+      <ion-col col-12>
+        <navbar-component></navbar-component>
+      </ion-col>
+    </ion-row>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-row>
+    <ion-col col-12 text-center>
+      <ion-slides effect="coverFlow" spaceBetween="-28px">
+        <ion-slide *ngFor="let card of cards">
+          <div *ngIf="card.page == 'SantaquiteriaPage' && !plaY; then thenBlock else elseBlock"></div>
+          <ng-template #thenBlock>
+            <img [src]="card.card_active" class="animated flip" (click)="loadPage(card.page)"/>
+          </ng-template>
+          <ng-template #elseBlock>
+            <div *ngIf="card.stream == 'null' && !plaY; then thenBlock else elseBlock"></div>
+            <ng-template #thenBlock>
+              <img [src]="card.card_inactive" class="animated flip" (click)="loadPage(card.page)"/>
+            </ng-template>
+            <ng-template #elseBlock>
+              <img [src]="card.card_inactive" class="animated flip" (click)="loadPage(card.page)"/>
+            </ng-template>
+          </ng-template>
+        </ion-slide>
+      </ion-slides>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="player">
+    <ion-col col-2 text-right class="ic_facebook">
+      <img src="assets/img/ic_facebook.png"/>
+    </ion-col>
+    <ion-col col-2 text-right class="ic_instagram">
+      <img src="assets/img/ic_instagram.png"/>
+    </ion-col>
+    <ion-col col-4 text-center class="player-play">
+      <div *ngIf="plaY">
+        <img src="assets/img/play.png" (click)="play()"/>
+      </div>
+      <div *ngIf="!plaY">
+        <img src="assets/img/pause.png" class="animated flip" (click)="pause()"/>
+      </div>
+    </ion-col>
+    <ion-col col-2 text-left class="ic_whatsapp">
+      <img src="assets/img/ic_whatsapp.png"/>
+    </ion-col>
+    <ion-col col-2 text-left class="ic_email">
+      <img src="assets/img/ic_email.png"/>
+    </ion-col>
+  </ion-row>
+
+</ion-content>
+
+<ion-footer>
+  <footer-component></footer-component>
+</ion-footer>

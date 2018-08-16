@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-row text-center>
+      <ion-col class="header-state">
+        <navbar-component></navbar-component>
+      </ion-col>
+    </ion-row>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngFor="let ct of cat">
+    <div *ngIf="ct.status == 'active' && ct.name !== 'Publicidade' && ct.frequency !== 'null'">
+      <ion-row class="states">
+        <ion-col col-3>
+          <img [src]="ct.icon"/>
+        </ion-col>
+        <ion-col col-9>
+          <ion-row>
+            <ion-col col-8>
+              <div class="state">
+                {{ct.name}}
+              </div>
+              <div class="frequency">
+                {{ct.frequency}}
+              </div>
+            </ion-col>
+            <ion-col col-4>
+              <button ion-button color="danger" (click)="loadPage(ct.page)">Ouvir</button>
+            </ion-col>
+          </ion-row>
+          <div class="line-bottom"></div>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ion-content>

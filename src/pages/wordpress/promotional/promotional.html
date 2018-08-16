@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title text-center class="header-state">
+            Promoções
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <div *ngFor="let post of posts">
+        <ion-card (click)="loadPost(post)">
+            <ion-thumbnail>
+                <media *ngIf="post.featured_media" [id]="post.featured_media"></media>
+            </ion-thumbnail>
+            <div class="card-title" [innerHtml]="post.cartola"></div>
+        </ion-card>
+        <ion-card-content (click)="loadPost(post)">
+            <div class="date-card">{{post.date | date: 'dd/MM/yyyy H:mm' }}</div>
+            <div class="title-card" [innerHtml]="post.title.rendered"></div>
+            <div class="border-cards"></div>
+        </ion-card-content>
+        <div class="divider-cards"></div>
+    </div>
+
+</ion-content>

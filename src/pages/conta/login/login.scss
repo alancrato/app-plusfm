@@ -1,0 +1,108 @@
+page-login {
+
+  ion-content{
+    background-image: url("../assets/img/login.png") !important;
+    background-size: 100% !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .scroll-content {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .card {
+    margin: 10px;
+    border-radius: 2px;
+    width: calc(100% - 20px);
+    font-size: 1.4rem;
+    background: transparent;
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0  0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+
+  .password{
+    margin-top: 2%;
+  }
+
+  .item{
+    border-radius: 30px;
+    padding-left: 16px;
+    padding-right: 0;
+    position: relative;
+    font-size: 1em;
+    font-weight: 300;
+    text-transform: none;
+    color: #000;
+    background-color: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: background-color 300ms cubic-bezier(0, 0, 0, 0);
+    transition: background-color 300ms cubic-bezier(0, 0, 0, 0);
+  }
+
+  .button{
+    border-radius: 30px;
+  }
+
+  .line{
+    border-bottom: 1px solid #b5b5b5bf;
+    margin-top: 10%;
+  }
+
+  .reset{
+    font-size: 0.9em;
+    text-transform: uppercase;
+    color: #d4d4d4;
+    margin: 0 auto;
+    padding: 5% 0;
+  }
+
+  .button{
+    margin-top: 2%;
+    text-transform: inherit;
+  }
+
+  .account{
+    margin: 0 auto;
+  }
+
+  .account-create{
+    margin-top: 4%;
+    text-align: center;
+    color: #d4d4d4;
+  }
+
+  .account-create strong{
+    color: #ea5d65;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 8px;
+  }
+
+  /*
+600px
+*/
+  @media (max-width: 42em) {
+
+    .item{
+      font-size: 1.4em;
+    }
+
+    .reset {
+      font-size: 1.2em;
+    }
+
+    .button {
+      height: 4.8rem;
+      font-size: 1.8rem;
+    }
+
+    .account-create{
+      font-size: 1.4em;
+    }
+
+  }
+
+}

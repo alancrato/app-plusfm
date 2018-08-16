@@ -1,0 +1,124 @@
+page-programming {
+
+  ion-header{
+    background-color: transparent;
+  }
+
+  ion-content{
+    background-color: #fff !important;
+  }
+
+  .header::after, .tabs[tabsPlacement="top"] > .tabbar::after, .footer::before, .tabs[tabsPlacement="bottom"] > .tabbar::before {
+    background-image: inherit !important;
+  }
+
+  .toolbar-title{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #6a1b9a;
+  }
+
+  .bar-button-default, .bar-button-clear-default, .bar-button-default {
+    color: #6a1b9a;
+    background-color: transparent;
+  }
+
+  .bar-button{
+    font-weight: 300;
+  }
+
+  .header-ios .toolbar-background-ios, .footer-ios .toolbar-background-ios {
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+  }
+
+  .back-button-text-ios {
+    letter-spacing: -.01em;
+    display: none;
+  }
+
+  .back-button-icon-ios {
+    font-size: 1.5em;
+  }
+
+  .toolbar-title-ios {
+    text-align: left;
+  }
+
+  .about-subtitle-programming{
+    color: #ea5d65;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin-left: 6%;
+  }
+
+  .swiper-pagination-bullet {
+    border-radius: 0;
+    display: inline-block;
+    width: 15px;
+    height: 3px;
+    background: #585454;
+    opacity: .2;
+    pointer-events: auto;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #ffda3c;
+    opacity: 1;
+  }
+
+  .toolbar-title-ios {
+    text-align: inherit;
+  }
+
+  .slide-image img{
+    width: 80%;
+  }
+
+  .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 8px;
+  }
+
+ .swiper-pagination-bullet {
+    width: 8px;
+    height: 3px;
+   background: white;
+  }
+
+  /*
+      600px
+    */
+  @media (max-width: 42em) {
+
+    .toolbar-title {
+      font-size: 1.6em;
+    }
+
+    .about-subtitle-programming {
+      font-size: 2.2em;
+    }
+
+  }
+
+  /*
+  320px
+*/
+  @media (max-width: 24em) {
+
+    .toolbar-title {
+      font-size: 1.2em;
+    }
+
+    .about-subtitle-programming {
+      font-size: 1.2em;
+    }
+
+    .bar-button {
+      font-size: 1em;
+    }
+
+  }
+
+
+}

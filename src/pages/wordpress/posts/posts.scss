@@ -1,0 +1,153 @@
+page-posts {
+  ion-header{
+    background-color: transparent;
+  }
+
+  ion-content{
+    background-color: #fff !important;
+  }
+
+  .header::after, .tabs[tabsPlacement="top"] > .tabbar::after, .footer::before, .tabs[tabsPlacement="bottom"] > .tabbar::before {
+    background-image: inherit !important;
+  }
+
+  .toolbar-title{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #6a1b9a;
+  }
+
+  .bar-button-default, .bar-button-clear-default, .bar-button-default {
+    color: #6a1b9a;
+    background-color: transparent;
+  }
+
+  .bar-button{
+    font-weight: 300;
+  }
+
+  .header-ios .toolbar-background-ios, .footer-ios .toolbar-background-ios {
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+  }
+
+  .back-button-text-ios {
+    letter-spacing: -.01em;
+    display: none;
+  }
+
+  .back-button-icon-ios {
+    font-size: 1.5em;
+  }
+
+  .toolbar-title-ios {
+    text-align: left;
+  }
+
+  .card {
+    margin: 10px;
+    border-radius: 15px;
+    width: calc(100% - 20px);
+    font-size: 1.4rem;
+    background: #fff;
+    box-shadow: 0 17px 34px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+  }
+
+  .card-title{
+    position: absolute;
+    z-index: 999;
+    border-radius: 20px;
+    background-color: white;
+    padding: 5px 15px;
+    margin-top: -10%;
+    color: #6a1b9a;
+    left: 15px;
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+
+  .date-card{
+    font-size: 0.8em;
+    color: #6a1b9a;
+    font-weight: bold;
+    margin-top: -4%;
+  }
+
+  .title-card{
+    color: #ea5d65;
+    font-size: 1.4em;
+    font-weight: bold;
+    line-height: 1.2em;
+  }
+
+  .border-cards{
+    padding-top: 4%;
+    border-bottom: 1px solid #dfdfdf;
+  }
+
+  .divider-cards{
+    margin-top: 8%;
+  }
+
+  /*
+      600px
+    */
+  @media (max-width: 42em) {
+
+    .toolbar-title {
+      font-size: 1.6em;
+    }
+
+    .card-title {
+      position: absolute;
+      z-index: 999;
+      border-radius: 20px;
+      background-color: white;
+      padding: 10px 20px;
+      margin-top: -10%;
+      color: #6a1b9a;
+      left: 15px;
+      font-weight: bold;
+      font-size: 0.9em;
+    }
+
+    .date-card {
+      font-size: 0.9em;
+      margin-top: -2%;
+    }
+
+    .title-card {
+      font-size: 2.4em;
+    }
+
+  }
+
+  /*
+    320px
+  */
+  @media (max-width: 24em) {
+
+    .toolbar-title {
+      font-size: 1em;
+    }
+
+    .card-title {
+      font-size: 0.8em;
+    }
+
+    .date-card {
+      font-size: 0.8em;
+      margin-top: -2%;
+    }
+
+    .title-card {
+      font-size: 1.4em;
+    }
+
+    .bar-button {
+      font-size: 1em;
+    }
+
+  }
+
+}

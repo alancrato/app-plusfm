@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-center class="header-state">
+      Sobre a Plus
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="header">
+    <img src="assets/imgs/about/about.png">
+  </div>
+
+  <div class="content-about">
+    <strong>O Ceará está ligado</strong> em rede com a Plus Fm, um novo conceito de rádio que chegou para ficar. A Plus Fm é uma rede de rádios dinâmica, eclética e totalmente voltada para o gosto do ouvinte.
+    <p>
+      Une o melhor do jornalismo local e nacional com as músicas mais pedidas do momento, a Plus Fm oferece uma programação ágil e inconfundível. A melhor companhia para quem curte rádio planejada para ser top. 24 horas por dia, todos os dias da semana.
+    </p>
+    <p>
+      A Rede Plus FM de Rádio apresenta um plano de divulgação amplo, que atende a todas as classes sociais.
+    </p>
+    <p>
+      Estamos conectados com as novas mídias e possibilitamos parcerias que atendam aos anseios e interesses dos anunciantes que necessitam falar com os mais diferentes públicos.
+    </p>
+  </div>
+
+  <div class="content-about-two">
+    <ion-row>
+      <ion-col col-8>
+        <div class="about-title">
+          O CEARÁ TÁ NA PLUS FM
+        </div>
+      </ion-col>
+      <ion-col col-8>
+        <div class="about-subtitle">
+          Localização geográfica da rede Plus Fm de rádio.
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <div class="map">
+        <img src="assets/imgs/about/mapa.png">
+      </div>
+    </ion-row>
+  </div>
+
+  <div *ngFor="let ct of cat">
+    <div *ngIf="ct.status == 'active' && ct.name !== 'Publicidade' && ct.frequency !== 'Plus'">
+      <ion-item>
+        <div class="title-state">
+          {{ct.name}} {{ct.frequency}}
+        </div>
+        <ion-row>
+          <div class="for" *ngFor="let st of stat">
+            <div *ngIf="st.categories.id == ct.id && st.status == 'active'">
+              <ion-col col-6>
+                <button ion-button round>{{st.name}}</button>
+              </ion-col>
+              <br/>
+            </div>
+          </div>
+        </ion-row>
+      </ion-item>
+    </div>
+  </div>
+
+</ion-content>

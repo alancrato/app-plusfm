@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>
+    <ion-title>
+      *Publicidade
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <div *ngFor="let p of pub">
+      <div *ngIf="p.page == 'AnunciopageonePage'">
+        <img [src]="p.icon"/>
+      </div>
+    </div>
+  </ion-row>
+</ion-content>

@@ -1,0 +1,159 @@
+page-settings {
+
+  .scroll-content{
+    margin-top: 45px !important;
+  }
+
+  ion-content{
+    background-color: #fff !important;
+  }
+
+  ion-list-header{
+    width: 100%;
+    height: 100px;
+    padding: 0;
+  }
+
+  .list{
+    margin: 0;
+  }
+
+  .list-header {
+    padding-left: 16px;
+    position: relative;
+    border-bottom: 0.55px solid #c8c7cc73;
+    font-size: 1.1em;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    text-transform: inherit;
+    color: white;
+    background: #6a1b9a;
+  }
+
+  .header .toolbar-background, .footer .toolbar-background {
+    border-style: solid;
+    border-color: transparent;
+  }
+
+  .font-email{
+    font-weight: 200;
+    font-size: 0.9em;
+  }
+
+  .button{
+    border-radius: 30px;
+  }
+
+  .line{
+    border-bottom: 1px solid #b5b5b5bf;
+    margin-top: 10%;
+  }
+
+  .bar-button-menutoggle ion-icon {
+    padding: 0 2px;
+    font-size: 1.5em;
+    font-weight: 200;
+  }
+
+  ion-input{
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 2px 10px;
+    border-color: darkgray;
+  }
+
+  .button{
+    margin-top: 5%;
+    text-transform: inherit;
+  }
+
+  .text-update{
+    font-size: 1.1em;
+    font-weight: 300;
+    padding: 5% 0;
+    color: #868484;
+  }
+
+  .item{
+    margin-bottom: 2%;
+  }
+
+  .item .item-button {
+    padding: 0 0.5em;
+    height: 3em;
+    font-size: 1em;
+  }
+
+  .text-input{
+    text-align: center;
+  }
+
+  /*
+  600px
+ */
+  @media (max-width: 42em) {
+
+   .item-button {
+      height: 3.2em !important;
+      font-size: 1.4em !important;
+    }
+
+    .button-notifications {
+      height: 60px;
+      font-size: 1.2em;
+    }
+
+    .list-header{
+      font-size: 1.6em;
+    }
+
+    .text-update {
+      font-size: 1.4em;
+    }
+
+    .text-input {
+      font-size: 1.2em;
+    }
+
+  }
+
+  /*
+  320px
+*/
+  @media (max-width: 24em) {
+
+    .item-button {
+      height: 3.3em !important;
+      font-size: 1.2em !important;
+    }
+
+    .button-notifications {
+      height: 40px;
+      font-size: 1em;
+    }
+
+    .list-header{
+      font-size: 1em;
+    }
+
+    .text-update {
+      font-size: 1em;
+      padding: 0;
+    }
+
+    .text-input {
+      font-size: 1em;
+      margin: 9px 8px;
+    }
+
+    .scroll-content {
+      margin-top: 10% !important;
+    }
+
+    .bar-button {
+      font-size: 1em;
+    }
+
+  }
+
+}

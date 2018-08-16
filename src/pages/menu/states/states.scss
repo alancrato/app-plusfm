@@ -1,0 +1,125 @@
+page-states {
+
+  ion-header{
+    height: 50px;
+    text-align: center;
+  }
+
+  ion-content{
+    background-color: black !important;
+  }
+
+  .bar-button-default, .bar-button-clear-default, .bar-button-default {
+    color: white;
+    background-color: transparent;
+  }
+
+  .back-button-text-ios {
+    letter-spacing: -.01em;
+    display: none;
+  }
+
+  .top{
+    margin-top: 5%;
+  }
+
+  .set{
+    margin-top: -6%;
+  }
+
+  .states{
+    margin-top: 5%;
+  }
+
+  .line-bottom{
+    border-bottom: 1px solid whitesmoke;
+    margin-top: 4%;
+  }
+
+  .state{
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding-top: 2%;
+  }
+
+  .frequency{
+    font-size: 1em;
+    font-weight: 200;
+    color: #a8a8a8;
+    margin-top: 2%;
+  }
+
+  .button-danger {
+    background-color: #b91c1c;
+  }
+
+  .button {
+    border-radius: 30px;
+    overflow: hidden;
+    height: 2.6rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: inherit;
+  }
+
+  .divider-states{
+    margin-top: 4%;
+  }
+
+  /*
+  600px
+ */
+  @media (max-width: 42em) {
+
+    .state {
+      color: white;
+      font-size: 1.8em;
+    }
+    .frequency {
+      font-size: 1.4em;
+    }
+    .button {
+      border-radius: 30px;
+      overflow: hidden;
+      font-size: 1.4rem;
+      font-weight: 400;
+      text-transform: inherit;
+      width: 100px;
+      height: 40px;
+    }
+
+    .bar-button {
+      font-size: 1.8em;
+
+    }
+
+  }
+
+  /*
+  320px
+  */
+  @media (max-width: 24em) {
+    .state {
+      color: white;
+      font-size: 1.2em;
+    }
+    .frequency {
+      font-size: 1em;
+    }
+    .button {
+      border-radius: 30px;
+      overflow: hidden;
+      font-size: 0.9em;
+      font-weight: 400;
+      text-transform: inherit;
+      width: 60px;
+      height: 25px;
+    }
+
+    .bar-button {
+      font-size: 1em;
+    }
+  }
+
+}

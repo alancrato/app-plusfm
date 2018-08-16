@@ -1,0 +1,409 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+ion-app{
+
+
+  /*
+  body
+   */
+  background: linear-gradient(black, #5f5f5f);
+
+  .content-ios {
+    background: linear-gradient(black, #5f5f5f) !important;
+    margin-top: 8%;
+  }
+
+  .content-app-ios{
+    margin-top: 0;
+    //background: linear-gradient(black, #5f5f5f) !important;
+  }
+
+  .alert-wrapper {
+    border-radius: 30px !important;
+    max-width: 280px !important;
+    background-color: white !important;
+    color: #555555 !important;
+    font-size: 1em !important;
+    font-weight: 300 !important;
+  }
+
+  .alert-title{
+    font-size: 1.2em !important;
+    font-weight: 400 !important;
+  }
+
+  .alert-button {
+    text-align: right;
+    text-align: end;
+    border-radius: 2px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    color: #350d4d !important;
+    background-color: transparent !important;
+    margin: 0 8px 0 0 !important;
+    padding: 10px !important;
+  }
+
+  /*
+  header
+   */
+  .toolbar-background {
+    border-color: inherit;
+    background: inherit;
+  }
+
+  .bar-button {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: white;
+  }
+
+  ion-title{
+    text-align: center !important;
+  }
+
+  .header::after, .tabs[tabsPlacement="top"] > .tabbar::after, .footer::before, .tabs[tabsPlacement="bottom"] > .tabbar::before {
+    left: 0;
+    bottom: 0;
+    background-position: left 0 top 0;
+    position: absolute;
+    width: 100%;
+    background-image: inherit !important;
+    content: "";
+  }
+
+  .lg img{
+    width: 20%;
+  }
+
+  .ic img{
+    width: 5%;
+  }
+
+  /*
+  content
+   */
+  ion-content{
+    background: transparent !important;
+  }
+
+  [padding] {
+    padding: 12px !important;
+  }
+
+  .scroll-content{
+    margin-top: 15% !important;
+    margin-bottom: 0 !important;
+  }
+
+  /*
+  Cards
+  .swiper-slide-prev img{
+    width: 290px;
+  }
+
+  .swiper-slide-next img{
+    width: 290px;
+  }*/
+
+  /*
+  Player
+   */
+
+  .player{
+    margin-top: -5%;
+  }
+
+  .player-play img{
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .ic_facebook img{
+    width: 25%;
+    margin-top: 70%;
+  }
+
+  .ic_instagram img{
+    width: 50%;
+    margin-top: 70%;
+  }
+
+  .ic_whatsapp img{
+    width: 50%;
+    margin-top: 70%;
+  }
+
+  .ic_email img{
+    width: 50%;
+    margin-top: 70%;
+  }
+
+  /*
+  footer component
+   */
+  .text-items{
+    font-size: 1em;
+    font-weight: 500;
+  }
+
+  .text-stream{
+    color: #ea5d65;
+    margin-top: -10%;
+    margin-bottom: 5%;
+  }
+
+  .img-stream{
+    width: 25%;
+    float: left;
+  }
+
+  .text-about{
+    color: #2bbbb8;
+    margin-top: -10%;
+    margin-bottom: 5%;
+  }
+
+  .img-about{
+    width: 25%;
+    float: left;
+    margin-left: -5px;
+  }
+
+  .text-promotions{
+    color: #fcba31;
+    margin-top: -10%;
+    margin-bottom: 5%;
+  }
+
+  .img-promotions{
+    width: 25%;
+    float: left;
+  }
+
+  .text-drops{
+    color: #4a9fe8;
+    margin-top: -10%;
+    margin-bottom: 5%;
+  }
+
+  .img-drops{
+    width: 25%;
+    float: left;
+  }
+
+  [col-3] {
+    padding: 0 !important;
+  }
+
+
+  /*
+  User Register and login
+  */
+
+  .user{
+    color: white;
+    padding: 0 5%;
+  }
+
+  .email{
+    color: white;
+    padding: 0 5%;
+  }
+
+
+  /*
+  App menu
+  */
+
+  .toolbar-background{
+    background-color: transparent;
+    color: white;
+  }
+
+  ion-item{
+    background-color: transparent;
+    color: white;
+  }
+
+  .item-dark, .item-divider-dark {
+    color: #fff;
+    background-color: #1f1e1e;
+  }
+
+  .list-app{
+    margin: 45% 0 0 0;
+  }
+
+  .logo-app{
+    width: 100%;
+    height: 150px;
+    background-color: #6a1b9a;
+    border-bottom-right-radius: 10px;
+  }
+
+  .fixed-content{
+    //background-color: #222222;
+  }
+
+  .content-app{
+    //background: linear-gradient(black, #5f5f5f) !important;
+  }
+
+  .logo-app img{
+    width: 70%;
+  }
+
+  .list .item-block .item-inner {
+    border-bottom: 0 solid transparent;
+  }
+
+  .item {
+    font-size: 1em;
+    font-weight: 200;
+  }
+
+  .item > ion-icon, .item-inner > ion-icon {
+    min-height: 1.1em;
+    font-size: 1.6em;
+    line-height: 1;
+    font-weight: 100;
+  }
+
+  .item [item-left], .item [item-right], .item [item-start], .item [item-end] {
+    margin: 9px 0 0 0;
+  }
+
+  .item-ios [item-left], .item [item-right], .item [item-start], .item [item-end] {
+    margin: 9px 15px 4px 0;
+  }
+
+  .list-ios > .item-block:first-child {
+    border-top: 0 solid transparent;
+  }
+
+  .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+    border-top: 0 solid transparent;
+  }
+
+  .item-ios[detail-push] .item-inner, button.item-ios:not([detail-none]) .item-inner, a.item-ios:not([detail-none]) .item-inner {
+    background-image: inherit !important;
+  }
+
+  .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+    border-bottom: 0 solid transparent;
+  }
+
+  .menu-inner {
+    background: #222 !important;
+  }
+
+  /*
+  App menu
+  */
+
+  .header-state{
+    margin-right: 12%;
+  }
+  
+  /*
+    600px
+   */
+  @media (max-width: 42em) {
+
+    .text-items {
+      font-size: 1.4em;
+    }
+
+  }
+
+  /*
+    320px
+   */
+  @media (max-width: 24em) {
+
+    .player {
+      //margin-top: -13%;
+    }
+
+    ion-footer {
+      left: 0;
+      bottom: -2px;
+    }
+
+    .text-items {
+      font-size: 1em;
+    }
+
+    /*.menu-inner {
+      width: 240px;
+    }
+
+    .logo-app {
+      width: 100%;
+      height: 130px;
+    }
+
+    .item {
+      font-size: 0.8em;
+      font-weight: 200;
+    }*/
+
+    .text-stream {
+      margin-top: -20%;
+    }
+
+    .text-about {
+      margin-top: -20%;
+    }
+
+    .text-promotions {
+      margin-top: -20%;
+    }
+
+    .text-drops {
+      margin-top: -20%;
+    }
+
+    .toast-login-error{
+      .toast-container{
+        background-color: map_get($colors, light) !important;
+        .toast-message{
+          color: map_get($colors, dark) !important;
+          text-align: center !important;
+          font-size: 0.9em !important;
+        }
+      }
+    }
+
+  }
+
+}
+
+.toast-login-error{
+  .toast-container{
+    background-color: map_get($colors, light) !important;
+    .toast-message{
+      color: map_get($colors, dark) !important;
+      text-align: center !important;
+      font-size: 1.2em !important;
+    }
+  }
+}

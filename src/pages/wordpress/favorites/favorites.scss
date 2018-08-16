@@ -1,0 +1,36 @@
+page-favorites {
+
+  /*
+  600px
+  */
+  @media (max-width: 42em) {
+    .toolbar-title{
+      color: white;
+    }
+
+    .scroll-content {
+      margin-top: 5% !important;
+    }
+
+    .trash{
+      margin-right: 10%;
+    }
+  }
+
+  /*
+  320px
+*/
+  @media (max-width: 24em) {
+
+    .toolbar-title{
+      font-size: 1em;
+    }
+
+    .bar-button {
+      font-size: 1em;
+    }
+
+  }
+  
+}
+  
